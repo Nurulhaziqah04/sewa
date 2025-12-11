@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAYA WITH JIKAH</title>
+
+<style>
+body { 
+    font-family: 'Poppins', Arial, sans-serif; 
+    margin:0; 
+    padding:0; 
+    background:#faf7f7; 
+    color:#2a2a2a;
+}
+
+header { 
+    background:#7A1F1F; 
+    color:white; 
+    text-align:center; 
+    padding:28px 0;
+    letter-spacing:1px;
+}
+header h1 { 
+    margin:0; 
+    font-size:30px; 
+    font-weight:700;
+}
+header p { 
+    margin:6px 0 0; 
+    font-size:15px; 
+    opacity:0.9;
+}
+
+.produk-section h2 { 
+    text-align:center; 
+    margin-bottom:22px; 
+    background:#8B1E1E; 
+    color:white; 
+    padding:10px 0;
+    font-size:18px;
+    border-radius:6px;
+}
+
+.produk-grid { 
+    display:flex; 
+    flex-wrap:wrap; 
+    gap:22px; 
+    justify-content:center; 
+}
+
+.produk-card { 
+    background:white; 
+    border-radius:14px; 
+    box-shadow:0 4px 15px rgba(0,0,0,0.08); 
+    padding:15px; 
+    width:250px; 
+    text-align:center;
+    border:1px solid #f1eaea;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.produk-card:hover {
+    transform: translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+h3 {
+    margin:12px 0 8px;
+    font-size:17px;
+    font-weight:600;
+    color:#6F1111;
+}
+
+.btn-wa { 
+    display:inline-block; 
+    margin-top:10px; 
+    padding:9px 14px; 
+    background:#8B1E1E; 
+    color:white; 
+    text-decoration:none; 
+    border-radius:8px; 
+    font-weight:600;
+    transition:0.25s;
+}
+.btn-wa:hover {
+    background:#6A1616;
+}
+
+.slider { 
+    position:relative; 
+    width:100%; 
+    height:250px; 
+    overflow:hidden; 
+    border-radius:12px; 
+    border:1px solid #f0e8e8;
+}
+.slides { 
+    display:flex; 
+    transition:transform 0.5s ease; 
+}
+.slide-item { 
+    min-width:100%; 
+    position:relative; 
+}
+.slide-item img { 
+    width:100%; 
+    height:250px; 
+    object-fit:cover; 
+    border-radius:12px;
+}
+
+.prev, .next { 
+    position:absolute; 
+    top:50%; 
+    transform:translateY(-50%); 
+    background:rgba(0,0,0,0.45); 
+    color:white; 
+    border:none; 
+    padding:9px 13px; 
+    cursor:pointer; 
+    border-radius:50%; 
+    font-size:17px;
+    transition:0.25s;
+}
+.prev:hover, .next:hover { 
+    background:rgba(0,0,0,0.7); 
+}
+.prev{ left:10px; } 
+.next{ right:10px; }
+
+.info-box {
+    margin-top: 12px;
+    padding: 8px;
+    background: #f8eaea;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color:#7A1F1F;
+    border:1px solid #e6cfcf;
+}
+
+footer { 
+    background:#7A1F1F; 
+    color:#fff; 
+    text-align:center; 
+    padding:18px 0; 
+    margin-top:25px; 
+    letter-spacing:0.5px;
+}
+
+@media (max-width: 800px) {
+    .produk-card { width:45%; }
+}
+@media (max-width: 500px) {
+    .produk-card { width:100%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>RAYA WITH JIKAH</h1>
+<p>Pilih Baju • WhatsApp • Payment</p>
+</header>
+
+<br>
+<br>
+<br>
+<br>
+
+<section class="produk-section">
+<h2>RENT – Custom/Ready mix Item</h2>
+
+<div class="produk-grid">
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/darkblue1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/darkblue2.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/darkblue3.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/darkblue4.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3> DARKBLUE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress  • RM • Saiz XS"><img src="imagee/darkbluelom.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress  • RM • Saiz XS"><img src="imagee/darkbluelom3.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress  • RM • Saiz XS"><img src="imagee/darkbluelom4.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress  • RM • Saiz XS"><img src="imagee/darkbluelom5.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress  • RM • Saiz XS"><img src="imagee/darkbluelom1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress  • RM • Saiz XS"><img src="imagee/darkbluelom2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3> DARKBLUE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/darkbluelam.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/darkbluelam3.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/darkbluelam4.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/darkbluelam1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/darkbluelam2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<butto class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3> DARKBLUE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz L"><img src="imagee/pink1.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz L"><img src="imagee/pink2.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz L"><img src="imagee/pink3.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3> PINK</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/pinklom.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/pinklom1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/pinklom2.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/pinklom3.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3> PINK</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/pinklam.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/pinklam1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/pinklam2.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/pinklam3.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3> PINK</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz L"><img src="imagee/mocha1.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz L"><img src="imagee/mocha2.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz L"><img src="imagee/mocha3.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3> MOCHA</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/mochalam.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/mochalam1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/mochalam2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3> MOCHA</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/mochalom.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/mochalom1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/mochalom2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3> MOCHA</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz M/L"><img src="imagee/mochangah.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M/L"><img src="imagee/mochangah1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M/L"><img src="imagee/mochangah2.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M/L"><img src="imagee/mochangah3.jpg"style="width:200px; height:300px;"></div>
+
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3> MOCHA</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/tealblue.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/tealblue3.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/tealblue5.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/tealblue4.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/tealblue1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/tealblue2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>TEALBLUE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/ashbluengah.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/ashbluengah1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/ashbluengah2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>ASHBLUE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/dresskuninglom.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/dresskuninglom1.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/dresskuninglom2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>LIGHT YELLOW</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/kuninglom.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/kuninglom1.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz XS"><img src="imagee/kuninglom2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>YELLOW BUTTERFLY</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Abaya • RM • Saiz XS-L"><img src="imagee/abayaemerald1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS-L"><img src="imagee/abayaemerald2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>EMERALD GREEN</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/abayapurple.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/abayapurple3.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/abayapurple4.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/abayapurple1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/abayapurple2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>PURPLE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Abaya • RM • Saiz L/XL"><img src="imagee/abayama.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz L/XL"><img src="imagee/abayama1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz L/XL"><img src="imagee/abayama2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>BLACK</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/brocade1.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/brocade2.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/brocade3.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz M"><img src="imagee/brocade.jpg" style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>BROCADE GREY/PURPLE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/hitamlom.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/hitamlom1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/hitamlom2.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/hitamlom3.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>HITAM</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Custom dress • RM • Saiz L/XL"><img src="imagee/kebayahitam.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz L/XL"><img src="imagee/kebayahitam1.jpg" style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Custom dress • RM • Saiz L/XL"><img src="imagee/kebayahitam2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>BLACK/WHITE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/kebayalam.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/kebayalam1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/kebayalam2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>HITAM</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/kurungpurple.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/kurungpurple1.jpg"style="width:200px; height:300px;"></div>
+<div class="slide-item" data-info="Abaya • RM • Saiz XS"><img src="imagee/kurungpurple2.jpg"style="width:200px; height:300px;"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>PURPLE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+</div>
+</section>
+
+<br>
+
+<section class="produk-section">
+<h2>PRELOVE – Custom/Ready mix Item</h2>
+
+<div class="produk-grid">
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="kurung custom • RM • Saiz XS"><img src="imagee/lilaclom.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz XS"><img src="imagee/lilaclom1.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz XS"><img src="imagee/lilaclom2.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz XS"><img src="imagee/lilaclom3.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz XS"><img src="imagee/lilaclom4.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>LILAC</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="kurung custom • RM • Saiz XS"><img src="imagee/lilaclam.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz XS"><img src="imagee/lilaclam1.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz XS"><img src="imagee/lilaclam2.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz XS"><img src="imagee/lilaclam3.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz XS"><img src="imagee/lilaclam4.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>LILAC</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="kurung custom • RM • Saiz M"><img src="imagee/lilacdee.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz M"><img src="imagee/lilacdee1.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz M"><img src="imagee/lilacdee2.jpg"></div>
+<div class="slide-item" data-info="kurung custom • RM • Saiz M"><img src="imagee/lilacdee3.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>LILAC</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="dress custom • RM • Saiz XS"><img src="imagee/dresstoquise1.jpg"></div>
+<div class="slide-item" data-info="dress custom • RM • Saiz XS"><img src="imagee/dresstoquise2.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>TOQUISE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="by • RM • Fressize"><img src="imagee/blousenude.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>NUDE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="by • RM • Saiz Xs"><img src="imagee/hitam.jpg"></div>
+<div class="slide-item" data-info="by • RM • Saiz XS"><img src="imagee/hitamcubit.jpg"></div>
+<div class="slide-item" data-info="by • RM • Freesize"><img src="imagee/hitambatwing.jpg"></div>
+<div class="slide-item" data-info="by • RM • Saiz M"><img src="imagee/hitamselisih.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>BLACK</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="by • RM • Saiz M"><img src="imagee/pinkbelacan.jpg"></div>
+<div class="slide-item" data-info="by • RM • Saiz XS"><img src="imagee/pinkrose.jpg"></div>
+<div class="slide-item" data-info="peach by Qiszar • RM • Saiz XS,M"><img src="imagee/qiszar.jpg"></div>
+<div class="slide-item" data-info="purple • RM • Saiz S"><img src="imagee/purple.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>PINK</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="by • RM • Saiz S"><img src="imagee/hijaulace.jpg"></div>
+<div class="slide-item" data-info="by • RM • Saiz XS"><img src="imagee/hijaulam.jpg"></div>
+<div class="slide-item" data-info="by Jakel • RM • Saiz S"><img src="imagee/hijaujakel.jpg"></div>
+<div class="slide-item" data-info="by Jalabella • RM • Saiz S"><img src="imagee/hijaujlabella.jpg"></div>
+<div class="slide-item" data-info="by New look • RM • Saiz M"><img src="imagee/hijaunewlook.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>GREEN</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="by  • RM • Freesize"><img src="imagee/birugelap.jpg"></div>
+<div class="slide-item" data-info="by Anggun • RM • Saiz XS"><img src="imagee/biruanggun.jpg"></div>
+<div class="slide-item" data-info="by Rafeasia • RM • Saiz XS"><img src="imagee/biruraffeasia.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>BLUE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="by • RM • Saiz XS"><img src="imagee/kokolam.jpg"></div>
+<div class="slide-item" data-info="by • RM • Saiz XS"><img src="imagee/kokolom.jpg"></div>
+<div class="slide-item" data-info="by • RM • Saiz XS"><img src="imagee/kokokuning.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>BROWN</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="by Fifarosul • RM • Saiz S"><img src="imagee/fifarosul.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>WHITE/YELLOW</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+<div class="produk-card">
+<div class="slider">
+<div class="slides">
+<div class="slide-item" data-info="by • RM • Saiz M"><img src="imagee/orenjaja.jpg"></div>
+<div class="slide-item" data-info="by • RM • Saiz L"><img src="imagee/orenmek.jpg"></div>
+</div>
+<button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(this,1)">&#10095;</button>
+</div>
+<div class="info-box"></div>
+<h3>ORANGE</h3>
+<a class="btn-wa" target="_blank">Tempah WhatsApp</a>
+</div>
+
+</div>
+</section>
+
+<script>
+function moveSlide(button, direction) {
+    const slider = button.parentElement;
+    const slides = slider.querySelector(".slides");
+    const items = slides.querySelectorAll(".slide-item");
+    const infoBox = slider.parentElement.querySelector(".info-box");
+    const waBtn = slider.parentElement.querySelector(".btn-wa");
+
+    let index = parseInt(slider.getAttribute("data-index")) || 0;
+    index = (index + direction + items.length) % items.length;
+    slider.setAttribute("data-index", index);
+    slides.style.transform = `translateX(-${index * 100}%)`;
+
+    const info = items[index].getAttribute("data-info");
+    infoBox.textContent = info;
+
+    const waText = info.replace(/ • /g, "%20");
+    waBtn.href = "https://wa.me/60142992105?text=" + waText;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".slider").forEach(slider => {
+        slider.setAttribute("data-index", 0);
+
+        const firstItem = slider.querySelector(".slide-item");
+        const infoBox = slider.parentElement.querySelector(".info-box");
+        const waBtn = slider.parentElement.querySelector(".btn-wa");
+
+        const info = firstItem.getAttribute("data-info");
+        infoBox.textContent = info;
+
+        const waText = info.replace(/ • /g, "%20");
+        waBtn.href = "https://wa.me/60142992105?text=" + waText;
+    });
+});
+</script>
+
+</body>
+</html>
+
